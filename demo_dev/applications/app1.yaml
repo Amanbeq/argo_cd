@@ -16,6 +16,7 @@ spec:
     helm:
       valueFiles:
       - values.yaml
+      - container image: "temson/k8php"
   project: default
   syncPolicy:
     automated:
