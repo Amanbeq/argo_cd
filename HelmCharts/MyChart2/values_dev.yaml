@@ -1,7 +1,0 @@
-# Dev Override Values for my Helm Chart
-
-container:
-  image: temson13/k8php
-
-replicaCount: 4
-
