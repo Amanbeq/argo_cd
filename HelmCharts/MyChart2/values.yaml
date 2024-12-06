@@ -1,6 +1,6 @@
 # Default Values for my Helm Chart
 
 container:
-  image: amanbeq/myapp
+  image: amanbeq/prime
 
 replicaCount: 1

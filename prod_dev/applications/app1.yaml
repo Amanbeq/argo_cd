@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: nginx-app
+  name: prime-app
   namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
     name: in-cluster
-    namespace: nginx
+    namespace: prime-app
   source:
     path: "HelmCharts/NginxChart"
     repoURL: "git@github.com:Amanbeq/argo_cd.git"
@@ -17,8 +17,8 @@ spec:
       valueFiles:
       - values.yaml
       parameters:
-      - name: temson13/k8php
-        value: temson/k8php
+      - name: amanbeq/prime
+        value: amaneq/prime
   project: default
   syncPolicy:
     automated:
