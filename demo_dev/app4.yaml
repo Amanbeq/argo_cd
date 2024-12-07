@@ -8,7 +8,7 @@ metadata:
 spec:
   destination:
     name: in-cluster
-    namespace: nginx
+    namespace: property-management
   source:
     path: "HelmCharts/MyChart1"
     repoURL: "git@github.com:Amanbeq/argo_cd.git"
@@ -18,7 +18,7 @@ spec:
       - values.yaml
       parameters:
       - name: "container.image"
-        value: nginx
+        value: temson13/temson13
   project: default
   syncPolicy:
     automated:
