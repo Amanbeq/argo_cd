@@ -10,9 +10,9 @@ spec:
     name: in-cluster
     namespace: prime-app
   source:
-    path: "HelmCharts/Mychart1"
+    path: "HelmCharts/MyChart1"
     repoURL: "git@github.com:Amanbeq/argo_cd.git"
-    targetRevision: HEAD
+    targetRevision: main
     helm:
       valueFiles:
       - values.yaml
@@ -26,4 +26,3 @@ spec:
       selfHeal: true
     syncOptions:
       - CreateNamespace=true
-
