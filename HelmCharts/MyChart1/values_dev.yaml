@@ -1,7 +1,7 @@
 # Dev Override Values for my Helm Chart
 
 container:
-  image: prime
+  image: amanbeq/prime:latest
 
 replicaCount: 4
 

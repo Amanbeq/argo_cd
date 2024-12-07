@@ -9,9 +9,9 @@ keywords:
   - apache
   - http
   - https
-  - artem
+  - denisastahov
 
 maintainers:
-  - name : Artem Feoktistov
-    email: arrfeoktistov@gmail.com
-    url  : www.example.com
+  - name : Denis Astahov
+    email: denis@astahov.net
+    url  : www.astahov.net
