@@ -10,7 +10,7 @@ spec:
     name: in-cluster
     namespace: prime-app
   source:
-    path: "HelmCharts/NginxChart"
+    path: "HelmCharts/Mychart1"
     repoURL: "git@github.com:Amanbeq/argo_cd.git"
     targetRevision: HEAD
     helm:

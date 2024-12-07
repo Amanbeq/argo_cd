@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: {{ .Release.Name }}-service
   labels:
-    owner: Amanbeq
+    owner: Amanbek
 spec:
   selector:
     project: {{ .Release.Name }}    # Selecting PODS with those Labels

@@ -1,7 +1,7 @@
 # Dev Override Values for my Helm Chart
 
 container:
-  image: myapp
+  image: prime
 
 replicaCount: 4
 
