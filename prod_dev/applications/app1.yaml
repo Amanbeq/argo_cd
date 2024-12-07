@@ -10,7 +10,7 @@ spec:
     name: in-cluster
     namespace: nginx
   source:
-    path: "HelmCharts/MyChart1"
+    path: "HelmCharts/MyChart2"
     repoURL: "git@github.com:Amanbeq/argo_cd.git"
     targetRevision: main
     helm:
