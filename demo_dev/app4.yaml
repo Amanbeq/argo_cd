@@ -1,0 +1,28 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: prime-app
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    name: in-cluster
+    namespace: nginx
+  source:
+    path: "HelmCharts/MyChart1"
+    repoURL: "git@github.com:Amanbeq/argo_cd.git"
+    targetRevision: main
+    helm:
+      valueFiles:
+      - values.yaml
+      parameters:
+      - name: "container.image"
+        value: nginx
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
