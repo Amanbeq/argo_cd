@@ -18,7 +18,7 @@ spec:
       - values.yaml
       parameters:
       - name: "container.image"
-        value: amanbeq/prime
+        value: amanbeq/myapp
   project: default
   syncPolicy:
     automated:
